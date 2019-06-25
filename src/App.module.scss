@@ -6,6 +6,10 @@
 	font-weight: 900;
 	text-align: center;
 	padding: 8px 16px 8px 16px;
+	text-shadow: #CCC 1px 0 10px; 
+	background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 235, 235));
+	color: darkred;
+
 }
 .container_boards {
 	display: flex;
@@ -21,12 +25,21 @@
 	padding: 16px 48px;
 }
 .result {
+	align-content: center;
 	padding-top: 32px;
 	text-align: center;
 	font-weight: 500;
 	font-size: 1.2rem;
+	padding: 8px 16px 8px 16px;
+	text-shadow: #CCC 1px 0 10px; 
+	background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 235, 235));
+	color: darkred;
 }
 
+table
+{
+	text-align: center;
+}
 .button_green {
 	background: green !important;
 }

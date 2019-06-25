@@ -5,11 +5,13 @@
 	display: flex;
 	justify-content: center;
 }
+
 .button {
 	color: white;
-	background: blue;
-	width: 200px;
-	height: 52px;
+	background:  darkred;
+
+	width: 50px;
+	height: 32px;
 	font-size: 1rem;
 	font-weight: 500;
 	border: none;
@@ -21,9 +23,22 @@
 }
 
 .button:hover {
-	background: yellow;
-	color: blue;
+	background: grey;
+	color: white;
 }
 .button_red {
 	background: red;
+}
+
+.icon {
+	margin-top: 5px;
+	width: 20px;
+	height: 20px;
+	fill: white;
+	flex: 2;
+	cursor: pointer;
+	outline: none;
+}
+.icon:hover {
+	fill: violet;
 }

@@ -3,9 +3,26 @@
 }
 
 .main {
-	max-width: 200px;
-	border: 1px solid lightgray;
-	border-radius: 8px;
-	$box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
-	margin: 16px;
+width: 250px;
+background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 235, 235));
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+text-align: center;
+padding: 10px 20px;
+margin: 10px 10px 0 0;
+}
+
+.add_del{
+	display: flex;
+}
+
+.parragraph{
+background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(206, 206, 206));
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+}
+
+h1{
+	color: crimson;
 }

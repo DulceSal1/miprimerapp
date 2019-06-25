@@ -10,19 +10,21 @@ class Board extends React.Component {
 	componentDidMount() {}
 
 	render() {
-		const { items, index, onButtonClick, onAddClick, onInChangeInsert,onInChangeRemove,Inputinsert, Inputdelete, onRemClick} = this.props;
+		const { name,items, index, onButtonClick, onAddClick, onInChangeInsert,onInChangeRemove,Inputinsert, Inputdelete, onRemClick} = this.props;
 		return (
-			<div className={styles.main}>
-				<div className={styles.container_add}>
-					<Input value={Inputinsert} onChange={onInChangeInsert} />
-					<Button label={'Agregar'} onClick={onAddClick} />
-				</div>
+			<div className={styles.main}>	
+				<h1>{name}<Button type={'forward'} onClick={onButtonClick}/></h1>	
+				<p className={styles.parragraph}>	
 				<List items={items} index={index} />
-				<Button label={'Siguiente'} onClick={onButtonClick} />
-				<div className={styles.container_add}>
-					<Input value={Inputdelete} onChange={onInChangeRemove}/>
-					<Button label={'Quitar'} onClick={onRemClick} />
+				<div className={styles.add_del}>
+					<Input value={Inputinsert} onChange={onInChangeInsert} />
+					<Button type={'add'} onClick={onAddClick} />
 				</div>
+				<div className={styles.add_del}>
+					<Input value={Inputdelete} onChange={onInChangeRemove}/>
+					<Button type={'remove'} onClick={onRemClick} />
+				</div>
+				</p>
 			</div>
 		);
 	}
